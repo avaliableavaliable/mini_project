@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-badge": "tdesign-miniprogram/badge/badge",
+    "t-loading": "tdesign-miniprogram/loading/loading",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-row": "tdesign-miniprogram/row/row",
+    "t-col": "tdesign-miniprogram/col/col"
+  },
+  "navigationBarTitleText": "我的消息",
+  "onReachBottomDistance": 50,
+  "enablePullDownRefresh": true
+}

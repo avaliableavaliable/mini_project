@@ -1,0 +1,15 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-image": "tdesign-miniprogram/image/image" ,
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-avatar-group": "tdesign-miniprogram/avatar-group/avatar-group",
+    "t-col": "tdesign-miniprogram/col/col",
+    "t-row": "tdesign-miniprogram/row/row"
+  },
+  "navigationBarTitleText": "买菜无忧",
+  "onReachBottomDistance": 50,
+  "enablePullDownRefresh": false
+}

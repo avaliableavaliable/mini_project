@@ -1,0 +1,73 @@
+<!--index.wxml-->
+
+  <view class="home-page-header">
+  <view class="search" bind:tap="navToSearchPage">
+    <t-search
+      t-class-input="t-search__input"
+      t-class-input-container="t-search__input-container"
+      placeholder="现货速抢 冰脆牛心包菜" disabled
+    >
+      <t-icon slot="left-icon" name="search" size="40rpx" color="#808080" />
+    </t-search>
+  <view class="address">
+  <t-icon slot="left-icon" name="location" size="28rpx" />
+  <text>无忧社区</text><text>></text>
+  </view>
+ </view>
+
+
+  <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs">
+  <t-tab-panel label="全部" value="0" />
+  <t-tab-panel label="🥬今日优选" value="1"/>
+  <t-tab-panel label="最新好货" value="2" />
+  <t-tab-panel label="关注团长" value="3" />
+</t-tabs>
+
+<!-- 加载页面  -->
+<view class="loading-container-flex" style="text-align: center; position: relative; left: 0rpx; top: 40rpx">
+  <t-loading wx:if="{{pageLoading}}" theme="dots" size="60rpx" class="wrapper" />
+  </view>
+
+</view>
+<view style="height: 16px" />
+<t-tabs defaultValue="0" theme="tag" space-evenly="{{false}}" class="small-tabs" bind:change="onPanelsChange">
+  <t-tab-panel wx:for="{{cates}}" wx:for-item="cate" wx:for-index="id" label="{{ cate }}" 
+  value="{{id}}" />
+</t-tabs>
+<view style="height: 16px" />
+
+<view bindtap="onToTop" style="position: fixed; width: 110rpx; height: 110rpx; display: block; box-sizing: border-box; left: 593rpx; top: 1116rpx" class="go-to-top" wx:if="{{topFlag}}"><t-icon name="backtop" size="64rpx" color="#808080" style="padding-top:25rpx;"></t-icon>
+</view>
+
+<!-- 下部分容器  -->
+<view class=".home-page-container">
+<!-- 商品列表  -->
+<view class="list"  wx:for="{{list}}" wx:for-item="item">
+<!-- 团长信息  -->
+<view class="team-info">
+<!-- 头像  -->
+<t-avatar class="avatar-example--medium" image="{{item.image}}" />
+<!-- 商家信息  -->
+<view class="shop-info">
+<text style="font-size:28rpx">{{item.name}}</text>
+<text style="font-size: 24rpx;color:#2B2B2B">{{item.nickname}}</text>
+</view>
+<!-- 关注按钮  -->
+<view style="position: relative; left: 250rpx; top: 0rpx">
+<t-button class="button {{item.isFous?'':'active'}}" theme="light" size="small" catchtap="onbuttonTap" hover-class="none" data-bean="{{item}}"><text>{{item.isFous?'已关注':'+ 关注'}}</text></t-button></view>
+</view>
+
+<!-- 商品信息 -->
+<view class="good-info" bind:tap="navToDetailPage" data-bean="{{item}}">
+<text class="good-des">{{item.good}}</text>
+<view class="price">{{item.price}}</view>
+<t-row class="images">
+  <t-col span="8" t-class="dark"><t-image src="{{item.src1}}" width="100" height="100" shape="round"/></t-col>
+  <t-col span="8" t-class="light"><t-image src="{{item.src2}}" width="100" height="100" shape="round"/></t-col>
+  <t-col span="8" t-class="dark"><t-image src="{{item.src3}}" width="100" height="100" shape="round"/></t-col>
+</t-row>
+</view>
+</view>
+
+<text class="end" style="position: relative; left: 154rpx; top: -25rpx" wx:if="{{finishFlag}}">————      预览数据加载完毕      ————</text>
+</view>

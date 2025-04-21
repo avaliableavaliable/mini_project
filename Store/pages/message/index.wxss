@@ -1,0 +1,61 @@
+page {
+  box-sizing: border-box;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
+  background-color: #F5F5F5;
+}
+
+.home-page-container {
+  width: 100%;
+  display: block;
+}
+
+.list {
+  padding: 0 24rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #FCFCFC;
+}
+
+.team-info {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  align-items: center;
+}
+
+.message-info {
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.message {
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.message-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.time text {
+  color: #808080;
+  font-size: 28rpx;
+}
+
+.line {
+  border-bottom-style: solid;
+  border-bottom-color: #999999;
+  border-bottom-width: 1rpx;
+  height: 10rpx;
+}
+
+.end {
+  align-items: center;
+  font-size: 24rpx;
+  padding-bottom: 25rpx;
+  color: #808080;
+}

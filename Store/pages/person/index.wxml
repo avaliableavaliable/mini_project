@@ -1,0 +1,74 @@
+<!--index.wxml-->
+
+  <view class="home-page-header">
+<!-- <view class="loading-container-flex" style="text-align: center; position: relative; left: 0rpx; top: 40rpx">
+  <t-loading wx:if="{{pageLoading}}" theme="dots" size="60rpx" class="wrapper" />
+  </view> -->
+  <t-row class="avatar-info">
+<!-- 头像  -->
+<t-col class="avatar">
+<image style="width: 70%; height: 70%; padding:10rpx;" src="/images/stand.png"/>
+</t-col>
+<t-col span="16"><text style="position: relative; left: 22rpx; top: 27rpx; font-size: 32rpx">无忧买菜</text></t-col>
+<t-col span="4"><text style="position: relative; left: 70rpx; top: 17rpx; font-size: 48rpx">></text>
+</t-col>
+  </t-row>
+
+<view class="buttons-top">
+  <t-row>
+  <t-col span="6" class="button-top"><t-icon name="wallet" size="54rpx" color="#2B2B2B"></t-icon><text>钱包</text></t-col>
+  <t-col span="6" class="button-top"><t-icon name="member" size="54rpx" color="#2B2B2B"></t-icon><text>团长</text></t-col>
+  <t-col span="6" class="button-top"><t-icon name="chat-message" size="54rpx" color="#2B2B2B"></t-icon><text>社群</text></t-col>
+  <t-col span="6" class="button-top"><t-icon name="star" size="54rpx" color="#2B2B2B"></t-icon><text>收藏</text></t-col>
+  </t-row>
+  </view>
+
+
+<view style="height: 30rpx;"></view>
+<view class="buttons-bottom">
+  <t-row>
+  <t-col span="5" class="button-top"><t-icon name="location" size="54rpx" color="#47BE3C"></t-icon><text>收货地址</text></t-col>
+  <t-col span="5" class="button-top"><t-icon name="task" size="54rpx" color="#47BE3C"></t-icon><text>我的订单</text></t-col>
+  <t-col span="5" class="button-top"><t-icon name="service" size="54rpx" color="#47BE3C"></t-icon><text>官方客服</text></t-col>
+  <t-col span="5" class="button-top"><t-icon name="pen-ball" size="54rpx" color="#47BE3C"></t-icon><text>反馈与意见</text></t-col>
+  <t-col span="4" class="button-top"><t-icon name="setting" size="54rpx" color="#47BE3C"></t-icon><text>设置</text></t-col>
+  </t-row>
+  </view>
+</view>
+<view style="height: 365rpx;"></view>
+
+<view bindtap="onToTop" style="position: fixed; width: 110rpx; height: 110rpx; display: block; box-sizing: border-box; left: 593rpx; top: 1116rpx" class="go-to-top" wx:if="{{topFlag}}"><t-icon name="backtop" size="64rpx" color="#808080" style="padding-top:25rpx;"></t-icon>
+</view>
+
+<!-- 下部分容器  -->
+<view class=".home-page-container">
+<!-- 商品列表  -->
+<view class="list"  wx:for="{{list}}" wx:for-item="item">
+<!-- 团长信息  -->
+<view class="team-info">
+<!-- 头像  -->
+<t-avatar class="avatar-example--medium" image="{{item.image}}" />
+<!-- 商家信息  -->
+<view class="shop-info">
+<text style="font-size:28rpx">{{item.name}}</text>
+<text style="font-size: 24rpx;color:#2B2B2B">{{item.nickname}}</text>
+</view>
+<!-- 关注按钮  -->
+<view style="position: relative; left: 250rpx; top: 0rpx">
+<t-button class="button {{item.isFous?'':'active'}}" theme="light" size="small" catchtap="onbuttonTap" hover-class="none" data-bean="{{item}}"><text>{{item.isFous?'已关注':'+ 关注'}}</text></t-button></view>
+</view>
+
+<!-- 商品信息 -->
+<view class="good-info" bind:tap="navToDetailPage" data-bean="{{item}}">
+<text class="good-des">{{item.good}}</text>
+<view class="price">{{item.price}}</view>
+<t-row class="images">
+  <t-col span="8" t-class="dark"><t-image src="{{item.src1}}" width="100" height="100" shape="round"/></t-col>
+  <t-col span="8" t-class="light"><t-image src="{{item.src2}}" width="100" height="100" shape="round"/></t-col>
+  <t-col span="8" t-class="dark"><t-image src="{{item.src3}}" width="100" height="100" shape="round"/></t-col>
+</t-row>
+</view>
+</view>
+
+<text class="end" style="position: relative; left: 154rpx; top: -25rpx" wx:if="{{finishFlag}}">————      预览数据加载完毕      ————</text>
+</view>

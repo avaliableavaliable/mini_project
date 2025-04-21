@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "navigationBarTitleText": "买菜无忧"
+}

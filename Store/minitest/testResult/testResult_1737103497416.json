@@ -1,0 +1,17 @@
+{
+  "startTime": 1737103497416,
+  "endTime": 1737103540712,
+  "numTotalTests": 1,
+  "numTodoTests": 0,
+  "testResults": [],
+  "success": false,
+  "numPassedTests": 0,
+  "numFailedTests": 0,
+  "env": {
+    "wxapplibVersion": "3.7.4",
+    "simulatorType": "wechat",
+    "devtoolsVersion": "1.06.2412040",
+    "openid": "o6zAJs6NQysUyLJk3q58IPCOZ3G0",
+    "device": "iPhone 12/13 (Pro)"
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "meta": {
+    "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+    "caseName": "minitest-1",
+    "remarks": "",
+    "version": "0.0.1",
+    "startTime": 1737103419357,
+    "endTime": 1737103440026,
+    "appid": "wxd5e43764f4712191",
+    "casePath": "",
+    "caseType": "normal",
+    "commonParams": [
+      {
+        "key": "1737103440042",
+        "name": "",
+        "value": ""
+      }
+    ]
+  },
+  "env": {
+    "wxapplibVersion": "3.7.4",
+    "devtoolsVersion": "1.06.2412040",
+    "openid": "o6zAJs6NQysUyLJk3q58IPCOZ3G0",
+    "entry": {
+      "path": "pages/home/index",
+      "query": "",
+      "scene": 1001
+    },
+    "mock": [
+      "none"
+    ],
+    "maxWaitFor": 10000,
+    "ignoreSelectors": [],
+    "mockAPIs": [],
+    "cleanCache": [
+      "none"
+    ],
+    "groupTouch": false,
+    "replaySetting": {
+      "screenshot": "none"
+    },
+    "simulatorType": "wechat",
+    "device": "iPhone 12/13 (Pro)",
+    "recordAPIs": []
+  },
+  "commands": [
+    {
+      "layer": "tool",
+      "commandType": "operate",
+      "command": "startRecord",
+      "waitfor": 0,
+      "timeStamp": 1737103419357,
+      "desc": ""
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view[3]/view[1]/view/view/scroll-view/view/view[2]/view",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "蔬菜",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 120.87498474121094,
+            "clientY": 148.11715698242188,
+            "force": 1,
+            "pageX": 120.87498474121094,
+            "pageY": 148.11715698242188,
+            "screenX": 289,
+            "screenY": 355.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 120.87498474121094,
+            "clientY": 148.11715698242188,
+            "force": 1,
+            "pageX": 120.87498474121094,
+            "pageY": 148.11715698242188,
+            "screenX": 289,
+            "screenY": 355.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[3]/view[1]/view/view/scroll-view/view/view[2]/view"
+      ],
+      "timeStamp": 8536,
+      "waitfor": 8536,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view[3]/view[1]/view/view/scroll-view/view/view[2]/view",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "蔬菜",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 120.87498474121094,
+            "clientY": 148.11715698242188,
+            "pageX": 120.87498474121094,
+            "pageY": 148.11715698242188,
+            "screenX": 289,
+            "screenY": 355.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[3]/view[1]/view/view/scroll-view/view/view[2]/view"
+      ],
+      "timeStamp": 8638,
+      "waitfor": 102,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view[3]/view[1]/view/view/scroll-view/view/view[2]/view",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "蔬菜",
+      "eventData": {
+        "detail": {
+          "x": 120.87498474121094,
+          "y": 148.11715698242188
+        },
+        "changedTouches": [
+          {
+            "clientX": 120.87498474121094,
+            "clientY": 148.11715698242188,
+            "force": 1,
+            "pageX": 120.87498474121094,
+            "pageY": 148.11715698242188,
+            "screenX": 289,
+            "screenY": 355.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 120.87498474121094,
+            "clientY": 148.11715698242188,
+            "force": 1,
+            "pageX": 120.87498474121094,
+            "pageY": 148.11715698242188,
+            "screenX": 289,
+            "screenY": 355.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[3]/view[1]/view/view/scroll-view/view/view[2]/view"
+      ],
+      "timeStamp": 8638,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchstart",
+      "target": "/view[5]/view[1]/view[1]/view[3]/button",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "已关注",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]/view[3]/button"
+      ],
+      "timeStamp": 11477,
+      "waitfor": 2839,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchend",
+      "target": "/view[5]/view[1]/view[1]/view[3]/button",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "已关注",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]/view[3]/button"
+      ],
+      "timeStamp": 11566,
+      "waitfor": 89,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "tap",
+      "target": "/view[5]/view[1]/view[1]/view[3]/button",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "已关注",
+      "eventData": {
+        "detail": {
+          "x": 313.8203125,
+          "y": 210.46875
+        },
+        "changedTouches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]/view[3]/button"
+      ],
+      "timeStamp": 11566,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchstart",
+      "target": "/view[5]/view[1]/view[1]/view[3]/button",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "+ 关注",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]/view[3]/button"
+      ],
+      "timeStamp": 13549,
+      "waitfor": 1983,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchend",
+      "target": "/view[5]/view[1]/view[1]/view[3]/button",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "+ 关注",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]/view[3]/button"
+      ],
+      "timeStamp": 13661,
+      "waitfor": 112,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "tap",
+      "target": "/view[5]/view[1]/view[1]/view[3]/button",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "+ 关注",
+      "eventData": {
+        "detail": {
+          "x": 313.8203125,
+          "y": 210.46875
+        },
+        "changedTouches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 313.8203125,
+            "clientY": 210.46875,
+            "force": 1,
+            "pageX": 313.8203125,
+            "pageY": 210.46875,
+            "screenX": 453,
+            "screenY": 408.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]/view[3]/button"
+      ],
+      "timeStamp": 13661,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view[5]/view[1]/view[1]",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "快乐老团长\n🏅金牌团长\n已关注",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 182.64060974121094,
+            "clientY": 209.87496948242188,
+            "force": 1,
+            "pageX": 182.64060974121094,
+            "pageY": 209.87496948242188,
+            "screenX": 341.5,
+            "screenY": 408
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 182.64060974121094,
+            "clientY": 209.87496948242188,
+            "force": 1,
+            "pageX": 182.64060974121094,
+            "pageY": 209.87496948242188,
+            "screenX": 341.5,
+            "screenY": 408
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]"
+      ],
+      "timeStamp": 14669,
+      "waitfor": 1008,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view[5]/view[1]/view[1]",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "快乐老团长\n🏅金牌团长\n已关注",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 182.6470489501953,
+            "clientY": 208.49996948242188,
+            "pageX": 182.6470489501953,
+            "pageY": 208.49996948242188,
+            "screenX": 341.5,
+            "screenY": 407.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]"
+      ],
+      "timeStamp": 14773,
+      "waitfor": 104,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view[5]/view[1]/view[1]",
+      "value": null,
+      "path": "pages/home/index",
+      "text": "快乐老团长\n🏅金牌团长\n已关注",
+      "eventData": {
+        "detail": {
+          "x": 182.6470489501953,
+          "y": 208.49996948242188
+        },
+        "changedTouches": [
+          {
+            "clientX": 182.64060974121094,
+            "clientY": 209.87496948242188,
+            "force": 1,
+            "pageX": 182.64060974121094,
+            "pageY": 209.87496948242188,
+            "screenX": 341.5,
+            "screenY": 408
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 182.64060974121094,
+            "clientY": 209.87496948242188,
+            "force": 1,
+            "pageX": 182.64060974121094,
+            "pageY": 209.87496948242188,
+            "screenX": 341.5,
+            "screenY": 408
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[1]"
+      ],
+      "timeStamp": 14774,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view[5]/view[1]/view[2]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/home/index",
+      "text": "【本地新鲜红萝卜，营养满分！】🌿来自大自然的馈赠，我们的本地红萝卜新鲜上市啦！色泽鲜艳，口感脆甜，每一根都是大自然的精华。",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 206.17184448242188,
+            "clientY": 274.5859069824219,
+            "force": 1,
+            "pageX": 206.17184448242188,
+            "pageY": 274.5859069824219,
+            "screenX": 361.5,
+            "screenY": 463
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 206.17184448242188,
+            "clientY": 274.5859069824219,
+            "force": 1,
+            "pageX": 206.17184448242188,
+            "pageY": 274.5859069824219,
+            "screenX": 361.5,
+            "screenY": 463
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[2]/text"
+      ],
+      "timeStamp": 16717,
+      "waitfor": 1943,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view[5]/view[1]/view[2]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/home/index",
+      "text": "【本地新鲜红萝卜，营养满分！】🌿来自大自然的馈赠，我们的本地红萝卜新鲜上市啦！色泽鲜艳，口感脆甜，每一根都是大自然的精华。",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 206.76467895507812,
+            "clientY": 273.7940979003906,
+            "pageX": 206.76467895507812,
+            "pageY": 273.7940979003906,
+            "screenX": 362,
+            "screenY": 463
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[2]/text"
+      ],
+      "timeStamp": 16812,
+      "waitfor": 95,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view[5]/view[1]/view[2]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/home/index",
+      "text": "【本地新鲜红萝卜，营养满分！】🌿来自大自然的馈赠，我们的本地红萝卜新鲜上市啦！色泽鲜艳，口感脆甜，每一根都是大自然的精华。",
+      "eventData": {
+        "detail": {
+          "x": 206.76467895507812,
+          "y": 273.7940979003906
+        },
+        "changedTouches": [
+          {
+            "clientX": 206.17184448242188,
+            "clientY": 274.5859069824219,
+            "force": 1,
+            "pageX": 206.17184448242188,
+            "pageY": 274.5859069824219,
+            "screenX": 361.5,
+            "screenY": 463
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 206.17184448242188,
+            "clientY": 274.5859069824219,
+            "force": 1,
+            "pageX": 206.17184448242188,
+            "pageY": 274.5859069824219,
+            "screenX": 361.5,
+            "screenY": 463
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[5]/view[1]/view[2]/text"
+      ],
+      "timeStamp": 16812,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 20669,
+      "waitfor": 3857,
+      "desc": "",
+      "layer": "tool",
+      "commandType": "operate",
+      "command": "stopRecord"
+    }
+  ]
+}

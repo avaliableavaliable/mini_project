@@ -1,0 +1,160 @@
+{
+  "startTime": 1737103468929,
+  "endTime": 1737103494620,
+  "numTotalTests": 1,
+  "numTodoTests": 0,
+  "testResults": [
+    {
+      "replayResults": [
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 0,
+          "status": "processing",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 1,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 2,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 3,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 4,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 5,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 6,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 7,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 8,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 9,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 10,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 11,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 12,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 13,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 14,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 15,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "50a13fd8-5736-4384-b888-d8d30893f323",
+          "commandIndex": 16,
+          "status": "processing",
+          "command": null
+        }
+      ],
+      "replayResult": "passed",
+      "startTime": 1737103468930,
+      "endTime": 1737103494617,
+      "casePath": "",
+      "caseName": "minitest-1",
+      "caseId": "50a13fd8-5736-4384-b888-d8d30893f323"
+    }
+  ],
+  "success": true,
+  "numPassedTests": 1,
+  "numFailedTests": 0,
+  "env": {
+    "wxapplibVersion": "3.7.4",
+    "simulatorType": "wechat",
+    "devtoolsVersion": "1.06.2412040",
+    "openid": "o6zAJs6NQysUyLJk3q58IPCOZ3G0",
+    "device": "iPhone 12/13 (Pro)"
+  }
+}

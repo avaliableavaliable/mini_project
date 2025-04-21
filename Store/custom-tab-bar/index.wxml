@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}" class="bar">
+    <t-tab-bar-item class="tabs" wx:for="{{tabBar}}" wx:for-item="item" wx:for-index="index" wx:key="index" icon="{{item.icon}}" value="{{item.value}}"
+    badge-props="{{ item.prop }}">
+        {{item.label}}
+    </t-tab-bar-item>
+</t-tab-bar>

@@ -1,0 +1,12 @@
+.tabs{
+  --td-tab-bar-hover-bg-color: #808080;
+  --td-tab-bar-color : #808080;
+  --td-tab-bar-active-bg : #E8F6E7;
+  --td-tab-bar-active-color : #47BE3C;
+  --td-tab-bar-height: 60rpx;
+  margin-top: 40rpx;
+}
+.bar{
+  height: 160rpx;
+  box-shadow: 0px -1px 4px #D1D1D1;
+}

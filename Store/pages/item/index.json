@@ -1,0 +1,18 @@
+{
+  "component": true,
+  "usingComponents": {
+    "t-search": "tdesign-miniprogram/search/search",
+    "t-loading": "tdesign-miniprogram/loading/loading",
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar",
+    "t-image": "tdesign-miniprogram/image/image" ,
+    "t-col": "tdesign-miniprogram/col/col",
+    "t-row": "tdesign-miniprogram/row/row"
+  },
+  "navigationBarTitleText": "我的订单",
+  "onReachBottomDistance": 50,
+  "enablePullDownRefresh": true
+}

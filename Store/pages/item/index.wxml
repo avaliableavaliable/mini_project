@@ -1,0 +1,102 @@
+<!--index.wxml-->
+
+  <view class="home-page-header">
+  <view class="search" style="height: 92rpx; display: block; box-sizing: border-box">
+    <t-search
+      t-class-input="t-search__input"
+      t-class-input-container="t-search__input-container" disabled
+    >
+      <t-icon slot="left-icon" name="search" size="40rpx" color="#808080" />
+    </t-search>
+ </view>
+
+
+ <t-tabs class="tabs" defaultValue="{{0}}" space-evenly="{{false}}" bind:click="onTabsClick">
+  <t-tab-panel wx:for="{{status}}" wx:key="index" label="{{item}}" value="{{index}}" />
+</t-tabs>
+
+<!-- 加载页面  -->
+<view class="loading-container-flex" style="text-align: center; position: relative; left: 0rpx; top: 40rpx">
+  <t-loading wx:if="{{pageLoading}}" theme="dots" size="60rpx" class="wrapper" />
+  </view>
+
+</view>
+<view style="height: 16px" />
+
+<view style="height: 16px" />
+
+<view bindtap="onToTop" style="position: fixed; width: 110rpx; height: 110rpx; display: block; box-sizing: border-box; left: 593rpx; top: 1116rpx" class="go-to-top" wx:if="{{topFlag}}"><t-icon name="backtop" size="64rpx" color="#808080" style="padding-top:25rpx;"></t-icon>
+</view>
+
+<!-- 下部分容器  -->
+<view class=".home-page-container">
+<!-- 商品列表  -->
+<view class="list"  wx:for="{{list}}" wx:for-item="item">
+<!-- 团长信息  -->
+<view class="team-info">
+<!-- 头像  -->
+<t-avatar size="64rpx" image="{{item.image}}" />
+<!-- 商家信息  -->
+<view class="shop-info">
+<text style="font-size:28rpx">{{item.name}}</text>
+</view>
+<text style="position: relative; left: 20rpx; top: 0rpx">></text>
+<text style="position: absolute; left: 600rpx; color: #EA4C3E">{{item.status}}</text>
+</view>
+
+<!-- 商品信息 -->
+<view class="good-info" bind:tap="navToDetailPage" data-bean="{{item}}">
+<t-row>
+  <t-col span="6" t-class="dark"><t-image src="{{item.src1}}" width="90" height="90" shape="round"/>
+  </t-col>
+
+  <t-col span="14" t-class="light">
+  <view class="good">
+  <text class="good-des" style="width: 377rpx; display: -webkit-box; box-sizing: border-box; font-size:28rpx">{{item.good}}</text>
+  <text class="scale" style="font-size:24rpx;color:#808080">{{item.scale}}</text>
+  </view>
+  </t-col>
+
+  <t-col span="4">
+  <view class="price-info">
+  <text class="good-price">{{item.price}}</text>
+  <text class="good-num">x {{item.num}}</text>
+  </view>
+  </t-col>
+</t-row>
+
+</view>
+
+<view class="price">实付：￥{{item.price*item.num}}</view>
+
+<view class="line"></view>
+
+<view class="buttons" style="position: relative; left: 72rpx; top: 0rpx">
+<view class="button0">
+<text>更多</text>
+</view>
+<view class="button1">
+<text wx:if="{{item.status=='待付款'}}">取消订单</text>
+<text wx:else>售后服务</text>
+</view>
+
+<view class="button1">
+  <text wx:if="{{item.status=='待收货'}}">物流详情</text>
+  <text wx:elif="{{item.status=='待付款'}}">修改订单</text>
+  <text wx:else>再来一单</text>
+</view>
+
+<view class="button2">
+  <text wx:if="{{item.status=='待收货' || item.status=='待发货'}}">确认收货</text>
+  <text wx:elif="{{item.status=='待付款'}}">立即付款</text>
+  <text wx:elif="{{item.status=='待评价'}}">立即评价</text>
+  <text wx:else>分享订单</text>
+</view>
+
+</view>
+
+</view>
+
+
+<text class="end" style="position: relative; left: 154rpx; top: -30rpx" wx:if="{{finishFlag}}">————      预览数据加载完毕      ————</text>
+</view>
